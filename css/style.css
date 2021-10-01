@@ -1,0 +1,131 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*, *::before, *::after {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+/* color variables go here */
+:root {
+	--background:rgb(57,57,57);
+	--light-text:rgb(245,245,245); 
+	--link-text: #0066CC;
+	--hover-text: #9b33c4;
+};
+
+body {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+/*highlight important details red*/
+.red {
+	color: #cc5a5a;
+}
+
+/* General Styles */
+
+main {
+	padding: 0.8em; 
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 77rem;
+}
+
+@media (max-width: 299px) {
+	main {
+		padding:
+			0.875rem
+			calc(1.3125rem + 14 * ((100vw - 299px) / 299));
+	}
+}
+/* initial mobile width + a fraction of remainder */
+@media (min-width: 600px) {
+	main {
+		width: calc(600px + ((1 / 2) * (100vw - 600px)));
+	}
+}
+@media (min-width: 800px) {
+	main {
+		width: calc(700px + ((3 / 4) * (100vw - 800px)));
+	}
+}
+@media (min-width: 1000px) {
+	main {
+		width: calc(850px + (100vw - 1000px));
+	}
+ }
+
+h2, h3, h4, h5, h6, p {
+	margin-bottom: 1em;
+}
+
+.separation {
+margin-bottom:50px;
+}
+
+p a {
+color: var(--link-text);
+text-decoration:underline;
+}
+
+p a:hover {
+color: var(--hover-text);
+text-decoration:underline;
+}
+
+p a:visited {
+color: var(--hover-text);
+text-decoration:underline;
+}
+
+main li a {
+color: var(--link-text);
+text-decoration:underline;
+}
+
+main li a:hover {
+color: var(--hover-text);
+text-decoration:underline;
+}
+
+main li a:visited {
+color: var(--hover-text);
+text-decoration:underline;
+}
+
+label {
+	font-weight: bold;
+
+}
+
+/* Footer */
+
+footer {
+	color: #ccc;
+	background-color: #222;
+	text-align: center;
+	padding: 1em;
+}
+
+footer a {
+	color: #ccc;
+}
+
+footer > p {
+	line-height: 1.6;
+}
+
+footer > p:nth-child(1) {
+	font-size: 1.2rem;
+}
+
+footer > p:nth-child(2) {
+	font-size: 0.8rem;
+}
+
